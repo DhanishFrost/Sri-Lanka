@@ -893,6 +893,10 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     text-align: center;
 }
 
+.purchasep3{
+    padding top: 10px;
+}
+
 .purchasebtn1{
     display: flex;
     justify-content: center;  
