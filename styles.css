@@ -861,7 +861,8 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
 }
 
 .purchasep3{
-    padding-top: 10px;
+    position: relative;
+    top: 20px;
     color: #613a29;
 }
 
