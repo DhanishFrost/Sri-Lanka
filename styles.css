@@ -661,7 +661,7 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
 /*Activities page styling*/
 
 .ticketbtn{
-    width: 18%;
+    width: 20%;
     text-decoration:none;
     color: #24b4ab;
     border: 3px solid #23706d;
@@ -670,6 +670,7 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     background:transparent;
     position:relative;
     cursor:pointer;
+    text-align: center;
 }
 
 .ticketbtn:hover{
