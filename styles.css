@@ -679,6 +679,12 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     transition: .8s; 
 }
 
+@media (max-width: 800px){
+    .ticketbtn{
+        width: 200px;
+    }
+}
+
 .section1page4{
     margin: 5px;
     display: flex;
