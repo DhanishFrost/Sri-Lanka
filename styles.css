@@ -226,7 +226,7 @@ nav .hamburger .line {
 /*Homepage main blank button styling*/
 
 .mainbutton{
-    display:inline block;
+    display: inline block;
     text-decoration:none;
     color:white;
     border: 1px solid white;
@@ -660,7 +660,7 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
 
 /*Activities page styling*/
 
-.activitymain a{
+.ticketbtn{
     width: 18%;
     text-decoration:none;
     color: #24b4ab;
@@ -672,7 +672,7 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     cursor:pointer;
 }
 
-.activitymain a:hover{
+.ticketbtn:hover{
     background-color: #24b4ab;
     color: white;
     transition: .8s; 
