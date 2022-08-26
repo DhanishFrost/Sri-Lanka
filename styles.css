@@ -660,8 +660,22 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
 
 /*Activities page styling*/
 
-.activitymain a:hover{
+.activitymain a{
+    width: 18%;
+    text-decoration:none;
     color: #24b4ab;
+    border: 3px solid #23706d;
+    border-radius: 25px;
+    padding: 12px 34px;
+    background:transparent;
+    position:relative;
+    cursor:pointer;
+}
+
+.activitymain a:hover{
+    background-color: #24b4ab;
+    color: white;
+    transition: .8s; 
 }
 
 .section1page4{
@@ -1004,46 +1018,6 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     }
 }
 
-.donationheading{
-    text-align: center;
-}
-
-.donationp1{
-    color: #613a29;
-}
-
-.donationp1 h2{
-    text-align: center;
-}
-
-.donationp2 h2{
-    text-align: center;
-}
-
-.donationp2{
-    position: relative;
-    bottom: 50px;
-    color: #613a29;
-}
-
-
-
-.donationbtn{
-    text-decoration:none;
-    color: #000;
-    border: 3px solid #bf9c86;
-    border-radius: 25px;
-    padding: 12px 34px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-
-.donationbtn:hover{
-    background-color: #bf9c86;
-    color: white;
-    transition: .8s;
-}
 
 
 
@@ -1153,4 +1127,5 @@ tbody tr:nth-child(3){background-color: #e3ded5;}
     .footercolumn{
       width: 100%;
   }
+  
 }

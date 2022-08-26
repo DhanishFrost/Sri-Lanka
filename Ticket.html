@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Ticket booking website">
+      <title>Book your tickets</title>
+      <link rel="stylesheet" href="normalize.css">
+      <link rel="manifest" href="manifest.json">
+      <link rel="stylesheet" href="ticket.css">
+        <!--Favicon Styling-->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/site.webmanifest">
+      <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+        <!--End of favicon styling-->
+  </head>
+
+  <body>
+  <main>
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__featured">
+        
+          <div class="modal__circle"></div>
+            <a type="link" href="4) Activites.html" class="button--transparent button--close">
+                <svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
+                <g><path fill="#ffffff" d="M1.293,15.293L11,5.586L12.414,7l-8,8H31v2H4.414l8,8L11,26.414l-9.707-9.707 C0.902,16.316,0.902,15.684,1.293,15.293z"></path> </g></svg>
+                <span class="visuallyhidden">Return to activites</span>
+            </a>
+        </div>
+      
+        <div class="modal__content">
+          <div class="form-style-5">
+            <form>
+          
+              <h2 class="headingh2">Book your tickets</h2>
+                <div > 
+                  <p>
+                      <label for="TType">Choose ticket type : </label>
+                        <select id="Ticket-Type" name="Ticket-Type" >
+                          <option value="n">Choose Ticket Type</option>
+                          <option value=5000>Foreign Adult Pass</option>
+                          <option value=2500>Foreign Child Pass</option> 
+                          <option value=1000>Local Adult Pass</option> 
+                          <option value=500>Local Child Pass</option>
+                          <option value=4500>Annual Pass-Local</option> 
+                          <option value=15000>Annual Pass-Foreign</option>     
+                        </select> 
+                  </p>
+                </div>
+                
+                <div>
+                <p>
+                    <label for="Number-of-tickets">Number of tickets : </label>
+                    <input type="number" name="Number-of-tickets" id="Number-of-tickets" min="1" value="0" > 
+                </p>
+                </div>
+                
+            <div id="Duration">
+                <p>
+                    <label for="Duration">Duration: </label>
+                    <p>
+                        <input type="radio" id="Duration1" name="duration" value="3 Hours" required checked>
+                        <label for="small">3 Hours</label> 
+                    </p>
+                
+                    <p>
+                        <input type="radio" id="Duration2" name="duration" value="1/2 Day" > 
+                        <label for="medium">1/2 Day</label>
+                    </p> 
+                
+                    <p>
+                        <input type="radio" id="Duration3" name="duration" value="Full Day">
+                        <label for="large">Full Day</label> 
+                    </p>
+                    <p>
+                        <input type="radio" id="Duration4" name="duration" value="2 Days">
+                        <label for="large">2 Days</label> 
+                    </p>
+                </p>
+            </div>
+                <p>
+                    <label for="Number-of-Food-Tockens">Number of Food Tockens: </label>
+                    <input type="number" name="Number-of-Food-Tockens" id="Number-of-Food-Tockens" min="0" value="0" > 
+                </p>
+
+                <p class="currentcost">
+                    <legend>current-cost : </legend>
+                    <p class="cur-cost" id="cur-cost">0.00</p>   
+                </p>
+        
+                <p><button class="AddToOrderbtn" type="submit" id="add">Add to order</button></p>
+                
+                  <button class="btn" type="button" id="addfav" >ADD TO FAVOURITE</button>
+                  <button class="btn" type="button" id="loadFav" >ORDER FAVOURITE</button>
+
+          <section class="currentOrder">
+
+                <h2 class="Overall-Order">Overall order</h2>
+                  <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                  </div>
+
+              <div class="cart-items"></div>
+    
+              <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">Rs.  0</span>
+              </div>
+   
+                  <center><button class="btn btn-primary btn-purchase" type="button">Place order </button></center>
+                    <br><br>
+                  <center><button class="btn btn-primary btn-checkLoyalty" type="button" id="checkLoyalty" >CHECK LOYALTY POINTS</button></center>
+            </section>     
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ </main>
+ 
+<script src="Scripts/ticketstyle.js"></script>
+
+</body>
+</html>

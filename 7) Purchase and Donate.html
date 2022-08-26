@@ -8,6 +8,7 @@
         <title>Sri Lanka</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="Donation.css">
         <link rel="manifest" href="manifest.json">
             <!--Favicon Styling-->
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -127,14 +128,94 @@
                     <div class="donationp1">
                         <h2>Donate to save and boost wildlife</h2><br>
                             Your donation contributes directly to the protection of elephant, leopard, turtle, sloth Bear, sambar, Slender Loris, blue Whale, birds.
-                        <br>
-                        <form method="get">
-                                    <label for="Donation amount">Donation amount : </label>
-                                    <input type="text" id="Donation amount" name="Donation amount">
-                                    <br>
-                            <button class="donationbtn" type="button">Donate</button>
-                        </form>
+                        <br><br><br>
+                        <button class="donationbtn" type="button" data-modal="popupid">Donate</button>
                     </div>
+                    <div id="popupid" class="popup">
+                        <div>
+                          <div class="formdesign">
+                            
+
+                            <div class="formstyling">
+                                <h2>Donation Form</h2>
+                            <a class="closecross">&times;</a>
+                            <form id="form" method ="GET">
+                                <h4>Personal details</h4>
+                                <div class="inputdetails">
+                                    <div>
+                                        <input id="donateName" type="text"placeholder="Full Name" required class="name" >
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div class="inputdetails">
+                                    <div>
+                                        <input id="donateEmail" type = "email"placeholder="Email Address" required class="name">
+                                    </div>
+                                </div>
+                                <div class="inputdetails">
+                                    <div class = "input-box">
+                                        <h4>Date of birth</h4>
+                                        <input id="donateBirthday"  type="text"  placeholder="DD/MM/YYYY" class="date_of_birth">
+                                        
+            
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <h4>Payment details</h4>
+                                            <input type="radio" name="pay"
+                                            id="bc1" checked class="radio">
+                                            <label for="bc1"><span><i class="fab fa-cc-visa"></i>Visa card</span></label>
+                                            <input type="radio" name="pay" id="bc2" class="radio">
+                                            <label for="bc2"><span><i class="fab fa-cc-mastercard"></i>Master card</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <input id="donateCardNumber" type="tel" placeholder="Card Number" required
+                                            class="name">                                
+                                        </div>                            
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <input id="donateCVV" type="tel" maxlength="3" size="3" placeholder="CVV" required class="name">
+                                            <br>
+                                            <br>
+                                        
+                                            <input id="donateExpMonth" placeholder="MM" type="text" maxlength="2" size="2" required>
+                                             <input id="donateExpYear" placeholder="YY" type="text" maxlength="2" size="2" required>
+                                              
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <select id="donateAmount" class="dropdownList" required>
+                                                <option value selected>Select donation amount</option>
+                                           <option value="100">LKR 100</option> 
+                                           <option value="250">LKR 250</option> 
+                                           <option value="500">LKR 500</option> 
+                                           <option value="1000">LKR 1000</option>
+                                           <option value="2500">LKR 2500</option>  
+                                           <option value="5000">LKR 5000</option>
+                                           <option value="10000">LKR 10000</option>
+                                            
+                                            </select>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <button id="btnDonate" class="payNow" type="submit">PAY NOW</button>
+                                        </div>
+                                    </div>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                     <br><br>
 
@@ -151,16 +232,94 @@
                         <p>
                             Your donation feeds the poor.
                         </p>
-                        <br>
-                        <form method="get">
-                            <p>
-                                <label for="Donation amount">Donation amount : </label>
-                                <input type="text" id="Donation amount" name="Donation amount">
-                            </p><br>
-                            <button class="donationbtn" type="button">Donate</button>
-                        </form>
+                        <br><br>
+                            <button class="donationbtn" type="button" data-modal="popupid">Donate</button>
                     </div>
+                    <div id="popupid" class="popup">
+                        <div>
+                          <div class="formdesign">
+                            
 
+                            <div class="formstyling">
+                                <h2>Donation Form</h2>
+                            <a class="closecross">&times;</a>
+                            <form id="form" method ="GET">
+                                <h4>Personal details</h4>
+                                <div class="inputdetails">
+                                    <div>
+                                        <input id="donateName" type="text"placeholder="Full Name" required class="name">
+                                        <br>
+                                        
+            
+                                    </div>
+                                </div>
+                                <div class="inputdetails">
+                                    <div >
+                                        <input id="donateEmail" type = "email" placeholder="Email Address" required class="name">
+                                    </div>
+                                </div>
+                                <div class="inputdetails">
+                                    <div>
+                                        <h4>Date of birth</h4>
+                                        <input id="donateBirthday"  type="text"  placeholder="DD/MM/YYYY" class="date_of_birth">
+                                        
+            
+                                    </div>
+                                    
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <h4>Payment details</h4>
+                                            <input type="radio" name="pay"
+                                            id="bc1" checked class="radio">
+                                            <label for="bc1"><span><i class="fab fa-cc-visa"></i>Visa card</span></label>
+                                            <input type="radio" name="pay" id="bc2" class="radio">
+                                            <label for="bc2"><span><i class="fab fa-cc-mastercard"></i>Master card</span></label>
+                                        </div>
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <input id="donateCardNumber" type="tel" placeholder="Card Number" required class="name">                                
+                                        </div>                            
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <input type="number" id="donateCVV"  maxlength="3" size="3" placeholder="CVV" required class="name">
+                                            <br>
+                                            <br>
+                                        
+                                            <input id="donateExpMonth" placeholder="MM" type="text" maxlength="2" size="2" required>
+                                             <input id="donateExpYear" placeholder="YY" type="text" maxlength="2" size="2" required>
+                                              
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <select id="donateAmount" class="dropdownList" required>
+                                            <option value selected>Select donation amount</option>
+                                           <option value="100">LKR 100</option> 
+                                           <option value="250">LKR 250</option> 
+                                           <option value="500">LKR 500</option> 
+                                           <option value="1000">LKR 1000</option>
+                                           <option value="2500">LKR 2500</option>  
+                                           <option value="5000">LKR 5000</option>
+                                           <option value="10000">LKR 10000</option>
+                                            
+                                            </select>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="inputdetails">
+                                        <div>
+                                            <button id="btnDonate2" class="payNow" type="submit">PAY NOW</button>
+                                        </div>
+                                    </div>
+                            </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <br><br>
 
                     <div class="imgarea">
@@ -212,6 +371,7 @@
           <div class="copyright">
             <p> &copy; Copyright 2022. All Rights Reserved. <strong>Sri Lanka</strong></p>
             <h6 class="design"> Developed by Dhanish Ithhaf - 0769299123</h6>
-        </div> 
+        </div>
+        <script src="Scripts/donate.js"></script> 
     </body>
 </html>
